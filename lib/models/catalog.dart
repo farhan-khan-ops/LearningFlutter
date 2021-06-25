@@ -2,11 +2,6 @@ import 'dart:convert';
 // import 'package:flutter/widgets.dart';
 
 class CatalogModel {
-static final catModel = CatalogModel._internal();
-
-CatalogModel._internal();
-
-factory CatalogModel() => catModel;
 
   static var items;
 //   Get Item by ID
