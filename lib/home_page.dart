@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
     await Future.delayed(Duration(seconds: 2));
     // final catalogJson =
     //     await rootBundle.loadString("assets/files/catalog.json");
-    final response = await http.get(Uri.parse(uri));
+    final response = await http.get(Uri.parse(url));
     final catalogJson = response.body;
     final decodeData = jsonDecode(catalogJson);
     var productsData = decodeData["products"];
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
             backgroundColor: context.theme.buttonColor,
             child: Icon(CupertinoIcons.cart),
           ).badge(
-              color: Vx.red500,
+              color: Vx.gray200,
               size: 20,
               count: _cart.items.length,
               textStyle:

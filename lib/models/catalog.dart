@@ -2,7 +2,6 @@ import 'dart:convert';
 // import 'package:flutter/widgets.dart';
 
 class CatalogModel {
-
   static var items;
 //   Get Item by ID
   Item getById(int id) =>
